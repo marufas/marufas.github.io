@@ -1,5 +1,7 @@
 body {
   background-color: #CCCCCC;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -12,7 +14,7 @@ header {
 nav {
   display: inline-block;
   align-items: center;
-
+  display: none;
 }
 
 nav a {
@@ -39,8 +41,36 @@ img {
   max-width: 600px;
 }
 
+.div_logo {
+  display: flex;
+  justify-content: center;
+}
+
 .main_logo {
   width: 32px;
   padding: 9px;
+}
+
+.menu_icon {
+  width: 32px;
+  padding: 9px;
   float: left;
+  display: inline;
+}
+
+@media screen and (min-width: 700px) {
+  .div_logo {
+    float: left;
+  }
+
+  .main_logo {
+  }
+
+  .menu_icon {
+    display: none;
+  }
+
+  nav {
+    display: inline-block;
+  }
 }
